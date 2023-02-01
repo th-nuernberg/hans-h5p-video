@@ -907,7 +907,7 @@ H5P.VideoHtml5 = (function ($) {
   var OLD_ANDROID_FIX = false;
 
   /** @constant {Boolean} */
-  var PREFERRED_FORMAT = 'dash.mpd';
+  var PREFERRED_FORMAT = 'mpd';
 
   /** @constant {Object} */
   var PLAYBACK_RATES = [0.25, 0.5, 1, 1.25, 1.5, 2];
