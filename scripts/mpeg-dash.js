@@ -1,5 +1,5 @@
 /** @namespace H5P */
-H5P.VideoHtml5 = (function ($) {
+H5P.VideoMPEGDASH = (function ($) {
 
   /**
    * HTML5 video player for H5P.
@@ -154,8 +154,8 @@ H5P.VideoHtml5 = (function ($) {
       numQualities++;
     }
 
-    if (numQualities > 1 && H5P.VideoHtml5.getExternalQuality !== undefined) {
-      H5P.VideoHtml5.getExternalQuality(sources, function (chosenQuality) {
+    if (numQualities > 1 && H5P.VideoMPEGDASH.getExternalQuality !== undefined) {
+      H5P.VideoMPEGDASH.getExternalQuality(sources, function (chosenQuality) {
         if (qualities[chosenQuality] !== undefined) {
           currentQuality = chosenQuality;
         }
@@ -935,4 +935,4 @@ H5P.VideoHtml5 = (function ($) {
 
 // Register video handler
 H5P.videoHandlers = H5P.videoHandlers || [];
-H5P.videoHandlers.push(H5P.VideoHtml5);
+H5P.videoHandlers.push(H5P.VideoMPEGDASH);
